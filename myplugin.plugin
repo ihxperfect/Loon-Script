@@ -4,8 +4,6 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 http-response https:\/\/api\.gotokeep\.com/(.+/subject%7C.+/dynamic%7C.+/coursePlus/.+%7C.+/status%7C.+/tab%7C.+/my%7C.+/start%7C.+/join%7C.+/complete%7C.+/detail/.+%7C.+/preview%7C.+/auth%7C.+/tab%7C.+/days) requires-body=1,script-path=https://raw.githubusercontent.com/ihxperfect/quantumultX/master/keep.js, tag=Keep
 http-response ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js, tag=用药助手
 http-response ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,requires-body=1,timeout=10, tag=微信 App 内被屏蔽链接快捷跳转
-http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Termius.js,tag=Termius
-
 
 [MITM]
 hostname = api.bilibili.com,mp.weixin.qq.com,ap*.intsig.net,newdrugs.dxy.cn,weixin110.qq.com
