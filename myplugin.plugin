@@ -1,9 +1,24 @@
 [Script]
 http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js, tag=Bilipj
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js, tag=微信公众号去广告
-http-response https:\/\/api\.gotokeep\.com/(.+/subject%7C.+/dynamic%7C.+/coursePlus/.+%7C.+/status%7C.+/tab%7C.+/my%7C.+/start%7C.+/join%7C.+/complete%7C.+/detail/.+%7C.+/preview%7C.+/auth%7C.+/tab%7C.+/days) requires-body=1,script-path=https://raw.githubusercontent.com/ihxperfect/quantumultX/master/keep.js, tag=Keep
 http-response ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js, tag=用药助手
 http-response ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,requires-body=1,timeout=10, tag=微信 App 内被屏蔽链接快捷跳转
+#test
+http-response ^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/ script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/Varlens.js,timeout=10,requires-body = true,tag = Varlens解锁PRO,enable=true
+http-response ^https:\/\/www\.babybooks\.top\/v0\/profile script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/babybooks/babybooks2.js,timeout=10,requires-body = true,tag = 儿童睡前故事破解vip,enable=true
+http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,timeout=10,requires-body = true,tag = 扫描全能王,enable=true
+http-response ^https:\/\/i\.at\.qq\.com\/pay\/memberinfo script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/wxts/wxts.js,timeout=10,requires-body = true,tag = 微信听书,enable=true
+http-response https://api.gotokeep.com/(.+/subject|.+/dynamic|.+/coursePlus/.+|.+/status|.+/tab|.+/my|.+/start|.+/join|.+/complete|.+/detail/.+|.+/preview|.+/auth|.+/tab|.+/days) script-path=https://raw.githubusercontent.com/photonmang/quantumultX/master/keep.js,timeout=10,requires-body = true,tag = keep,enable=true
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$ script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/Baimiao.js,timeout=10,requires-body = true,tag = 白描,enable=true
+http-response ^https?:\/\/nmeditation\.snailsleep\.net\/meditation-(audio|user|order|audio)\/(api|user)\/(audio\/master\/detail|get\/info|order/user\/vip\/info|ad\/get) script-path=https://raw.githubusercontent.com/photonmang/quantumultX/master/dxmx.js,timeout=10,requires-body = true,tag = 大象冥想,enable=true
+http-response ^https:\/\/(snailsleep\.net\/|(music|community)\.snailsleep\.net\/)(snail\/v1\/profile\/get|snail-music\/music\/(sleeping|meditation)\/single\/list) script-path=https://github.com/photonmang/quantumultX/raw/master/wnsm.js,timeout=10,requires-body = true,tag = 蜗牛睡眠,enable=true
+http-response ^https:\/\/bookapi\.ihuman\.com\/(v1\/get\_user\_info|v1\/get\_purchase\_list) script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/hnsyhb.js,timeout=10,requires-body = true,tag = 洪恩双语绘本,enable=true
+http-response https:\/\/www\.xmind\.cn\/_res\/devices script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/xmind.js, requires-body=true, timeout=10, tag=xmind,enable=true
+http-response https?:\/\/api\.jiaonizuocai\.com script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cpdq.js,timeout=10,requires-body = true,tag = 菜谱大全,enable=true
+http-response https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$ script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/sololearn.js,timeout=10,requires-body = true,tag = SoloLearn,enable=true
+http-response ^https:\/\/api\.psy-1\.com\/cosleep\/user\/info script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/xiaoshuimian.js,timeout=10,requires-body = true,tag = 小睡眠,enable=true
+http-response ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/znzj.js,timeout=10,requires-body = true,tag = 智能证件照相机,enable=true
+http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js,timeout=10,requires-body = true,tag = Termius,enable=true
 
 [MITM]
-hostname = api.bilibili.com,mp.weixin.qq.com,ap*.intsig.net,newdrugs.dxy.cn,weixin110.qq.com
+hostname = api.bilibili.com,mp.weixin.qq.com,ap*.intsig.net,newdrugs.dxy.cn,weixin110.qq.com,mid.zineapi.com,www.babybooks.top,ap*.intsig.net,i.at.qq.com,api.gotokeep.com,59.110.149.231,129.211.156.213,baimiao.uzero.cn,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,community.snailsleep.net,bookapi.ihuman.com,www.xmind.cn,api.jiaonizuocai.com,api.sololearn.com,api.psy-1.com,app.xunjiepdf.com,*.xunjie*.com,api.termius.com
